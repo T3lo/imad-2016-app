@@ -16,7 +16,27 @@ var articleOne={
             <p>This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.</p>'`     
 };
 
+var articleTwo={
+    title: 'Article-two',
+    heading: 'Article-two',
+    date: 'Dec 10, 0216',
+    content:
+            `<p>This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.</p>
+            <p>This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.</p>
+            <p>This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.</p>
+            <p>This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.</p>'`     
+};
 
+var articleThree={
+    title: 'Article-three',
+    heading: 'Article-three',
+    date: 'Nov 10, 2300',
+    content:
+            `<p>This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.</p>
+            <p>This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.</p>
+            <p>This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.</p>
+            <p>This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.</p>'`     
+};
 function createTemplate (data) {
     var title=data.title;
     var date=data.date;
@@ -59,11 +79,11 @@ app.get('/article-one', function(req, res) {
 });
 
 app.get('/article-two', function(req, res) {
-  res.send('Article two request will be serverd here.');
+  res.send(createTemplate(articleTwo));
 });
 
 app.get('/article-three', function(req, res) {
-  res.send('Article three request will be serverd here.');
+  res.send(createTemplate(articleThree));
 });
 
 app.get('/ui/style.css', function (req, res) {
