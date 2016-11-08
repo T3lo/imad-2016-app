@@ -5,12 +5,57 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+var articleOne={
+    title: 'Article-one',
+    heading: 'Article-one',
+    date: 'Nov 10, 0216',
+    content:
+            `<p>This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.</p>
+            <p>This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.</p>
+            <p>This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.</p>
+            <p>This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.</p>'`     
+};
+
+
+function createTemplate (data) {
+    var title=data.title;
+    var date=data.date;
+    var heading=data.heading;
+    var content=data.content;
+
+var htmlTemplate=`
+<html>
+    <head>
+        <title>
+            ${title}
+        </title>
+    </head>
+    <body>
+        <div>
+            <a href='/'>HOME</a>
+        </div>
+        <hr/>
+        <h2>${heading}</h2>
+        <div>
+            ${date}
+        </div>
+        <div>
+            ${content}      
+        </div>
+    </body>
+</html>    
+`;
+
+    return htmlTemplate;
+}
+
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
 app.get('/article-one', function(req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+  res.send(createTemplate(articleOne));
 });
 
 app.get('/article-two', function(req, res) {
