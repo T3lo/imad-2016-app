@@ -44,7 +44,7 @@ submit.onclick = function() {
             ul.innerHTML = list;
           }
       }
-  };
+  } ;
   
   request.open('GET', 'http://t3lo.imad.hasura-app.io/submit-name?name=' + name, true);
   request.send(null);      
