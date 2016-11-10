@@ -97,7 +97,7 @@ app.get('/submit-name' , function(req , res) {
 
 
 var coms=[];
-app.get('/one/comments' ,function(req ,res ){
+app.get('/one/comments?name=' ,function(req ,res ){
         var com = req.query.com;
         coms.push(com);
         res.send(JSON.stringify(coms));
