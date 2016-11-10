@@ -2,6 +2,11 @@ console.log('Loaded!');
 
 //Move th image
 var img = document.getElementById('profile-pic');
-img.onclick = function () {
-    img.style.margin = '100px';
+var marginLeft = 0;
+function moveRight() {
+    marginLeft += 10;
+    img.style.marginleft = marginLeft + 'px';
 }
+img.onclick = function () {
+    var interval = setInterval(moveRight, 100);
+};
