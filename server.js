@@ -62,6 +62,9 @@ var htmlTemplate=`
         <div>
             ${content}      
         </div>
+        <input type='text' id='name' placeholder='name'></input>
+        <input type='submit' value='Submit' id='submit_btn'></input>
+        <ul id='namelist'></ul>
     </body>
 </html>    
 `;
