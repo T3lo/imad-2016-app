@@ -63,7 +63,7 @@ var htmlTemplate=`
             ${content}      
         </div>
         <input type='text' id='name' placeholder='name'></input>
-        <input type='submit' value='Submit' id='submit_btn'></input>
+        <input type='submit' value='Submit' id='enter'></input>
         <ul id='namelist'></ul>
     </body>
 </html>    
@@ -93,10 +93,15 @@ app.get('/submit-name' , function(req , res) {
 });
 
 
-var com=[];
-app.get('/comments' ,function(req ,res ){
-        
+
+var coms=[];
+app.get('/one/comments' ,function(req ,res ){
+        var com = req.query.com;
+        coms.push(com);
+        res.send(JSON.stringify(coms));
 });
+
+
 
 app.get('/:articleName', function(req, res) {
   var articleName = req.params.articleName;
