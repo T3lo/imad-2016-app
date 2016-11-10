@@ -65,6 +65,8 @@ var htmlTemplate=`
         <input type='text' id='name' placeholder='name'></input>
         <input type='submit' value='Submit' id='enter'></input>
         <ul id='namelist'></ul>
+        script type="text/javascript" src="/ui/main.js">
+        </script>
     </body>
 </html>    
 `;
