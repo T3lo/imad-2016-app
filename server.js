@@ -89,9 +89,9 @@ app.get('/:articleName', function(req, res) {
 
 var names=[];
 
-app.get('/submit-name/:name' , function() {
+app.get('/submit-name' , function() {
    //get the name from the request
-   var name = req.params.name;
+   var name;
    
    names.push(name);
    
