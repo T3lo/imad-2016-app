@@ -132,7 +132,7 @@ app.get('/one/comments' ,function(req ,res ){
 
 app.get('/articles/:articleName', function(req, res) {
   
-  pool.query("SELECT * FROM article WHERE id = '1'" , function(err , result) {
+  pool.query("SELECT * FROM article WHERE title = 'article-one'" , function(err , result) {
      if(err) {
          res.status(500).send(err.toString());
      } 
