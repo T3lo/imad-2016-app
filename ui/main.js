@@ -76,8 +76,8 @@ enter.onclick = function() {
       }
   } ;
   
-  var nameInput = document.getElementById('name');
-  var name = nameInput.value;
+  var comInput = document.getElementById('name');
+  var com = comInput.value;
   request.open('GET', 'http://t3lo.imad.hasura-app.io/one/comments?name=' + com, true);
   request.send(null);      
   
