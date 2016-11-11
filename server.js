@@ -91,7 +91,7 @@ app.get('/', function (req, res) {
 });
 
 var pool = new Pool(config);
-app.get('/test-db', function(){
+app.get('/test-db', function(req , res){
    //make a select req
    //return a response with the results
    pool.query('SELECT * FROM test' , function(err , result){
@@ -99,7 +99,7 @@ app.get('/test-db', function(){
           res.status(500).send(err.toString());
       }
       else{
-          res.send(JSON.stringify(result));
+          res.send(JSON.stringify(result.res));
       }
    });
 });
