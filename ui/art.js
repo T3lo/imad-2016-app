@@ -22,7 +22,7 @@ enter.onclick = function() {
   
   var com = document.getElementById('name');
   var name = com.value;
-  request.open('GET', 'http://t3lo.imad.hasura-app.io/submit-name?name=' + com, true);
+  request.open('GET', 'http://t3lo.imad.hasura-app.io/submit-name?name=' + name, true);
   request.send(null);      
 
 };
