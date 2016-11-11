@@ -62,11 +62,14 @@ var htmlTemplate=`
         <div>
             ${content}      
         </div>
+        
         <input type='text' id='name' placeholder='name'></input>
-        <input type='submit' value='Submit' id='enter'></input>
+        <input type='submit' value='Submit' id='submit_btn'></input>
         <ul id='namelist'></ul>
+        
         <script type="text/javascript" src="/ui/art.js">
         </script>
+        
     </body>
 </html>    
 `;
@@ -117,6 +120,10 @@ app.get('/ui/style.css', function (req, res) {
 
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
+});
+
+app.get('/ui/art.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'art.js'));
 });
 
 app.get('/ui/madi.png', function (req, res) {
