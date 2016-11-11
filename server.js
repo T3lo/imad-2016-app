@@ -13,38 +13,7 @@ var config = {
 var app = express();
 app.use(morgan('combined'));
 
-var article = {
-    'one' : {
-    title: 'Article-one',
-    heading: 'Article-one',
-    date: 'Nov 10, 0216',
-    content:
-            `<p>This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.</p>
-            <p>This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.</p>
-            <p>This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.</p>
-            <p>This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.</p>'`     
-},
-    'two' : {
-    title: 'Article-two',
-    heading: 'Article-two',
-    date: 'Dec 10, 0216',
-    content:
-            `<p>This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.</p>
-            <p>This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.</p>
-            <p>This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.</p>
-            <p>This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.</p>'`     
-},
-    'three' : {
-    title: 'Article-three',
-    heading: 'Article-three',
-    date: 'Nov 10, 2300',
-    content:
-            `<p>This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.</p>
-            <p>This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.</p>
-            <p>This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.</p>
-            <p>This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.This is the content of my first article.</p>'`     
-}
-};
+
 function createTemplate (data) {
     var title=data.title;
     var date=data.date;
@@ -65,7 +34,7 @@ var htmlTemplate=`
         <hr/>
         <h2>${heading}</h2>
         <div>
-            ${date}
+            ${date.toString()}
         </div>
         <div>
             ${content}      
