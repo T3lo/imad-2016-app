@@ -1,6 +1,6 @@
-var submit = document.getElementById('submit_btn');
+var enter = document.getElementById('submit_btn');
 
-submit.onclick = function() {
+enter.onclick = function() {
   //create a request Object
   var request = new XMLHttpRequest();
   
@@ -20,9 +20,9 @@ submit.onclick = function() {
       }
   } ;
   
-  var nameInput = document.getElementById('name');
-  var name = nameInput.value;
-  request.open('GET', 'http://t3lo.imad.hasura-app.io/submit-name?name=' + name, true);
+  var com = document.getElementById('name');
+  var name = com.value;
+  request.open('GET', 'http://t3lo.imad.hasura-app.io/submit-name?name=' + com, true);
   request.send(null);      
 
 };
