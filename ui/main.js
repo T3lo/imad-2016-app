@@ -32,7 +32,7 @@ body.onload = function() {
                 var lm={
                     "title":"123" , "date": "10-10-16", "content": "<p>Damn it</p>"
                 };
-                div.innerHTML = txt["title"] ;
+                div.innerHTML ="<div id='one'><div><p>"+txt["title"]+"</p></div><div><p>"+txt["content"]+"</p></div></div>";
                 
             }
         }
