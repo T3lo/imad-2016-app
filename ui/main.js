@@ -22,7 +22,7 @@ var htmlTemplate=`
 var body = document.getElementById('set');
 body.onload = function() {
     var div = document.getElementById('test');
-    div.innerHTML = '45';
+    div.innerHTML = '<p>qwerty</p>';
     var request = new XMLHttpRequest();
     request.onreadystatechange = function () {
         if( request.readyState === XMLHttpRequest.DONE) {
