@@ -29,7 +29,7 @@ body.onload = function() {
                 txt = JSON.parse(txt);
                 var div = document.getElementById('test');
                 var ln = {
-                    f:"rerer" , s: "234234"
+                    "f":"rerer" , s: "234234"
                 };
                 div.innerHTML = ln["f"];
             }
