@@ -4,7 +4,7 @@ body.onload = function() {
     var div = document.getElementById('test');
     div.innerHTML = '<p>qwerty</p>';
     var lst="";
-for(var i=1;i<=4;i++) {
+for(var i=1;i<=1;i++) {
     var request = new XMLHttpRequest();
     request.onreadystatechange = function () {
         if( request.readyState === XMLHttpRequest.DONE) {
