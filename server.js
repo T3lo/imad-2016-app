@@ -2,7 +2,7 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 var Pool = require('pg').Pool;
-
+/*
 var config = {
     user: 't3lo',
     database: 't3lo',
@@ -54,11 +54,13 @@ var htmlTemplate=`
     return htmlTemplate;
 }
 
+*/
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+/*
 var pool = new Pool(config);
 app.get('/test-db', function(req , res){
    //make a select req
@@ -141,7 +143,7 @@ app.get('/articles/:articleName', function(req, res) {
 
 
 
-
+*/
 
 
 
