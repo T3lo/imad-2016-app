@@ -32,8 +32,8 @@ body.onload = function() {
                 var lm={
                     "title":"123" , "date": "10-10-16", "content": "<p>Damn it</p>"
                 };
-                div.innerHTML = "<div id='item'><div id='one'><p>" +txt["title"] + "</p></div><div id='two'><p>" + txt["content"]; 
-                div.innerHTML =+ '</p></div></div>';
+                div.innerHTML = txt["title"] ;
+                
             }
         }
     };
