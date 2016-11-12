@@ -1,4 +1,4 @@
-function createTemplate (data) {
+function c (data) {
     var title=data.title;
     var date=data.date;
     var content=data.content;
@@ -32,7 +32,7 @@ body.onload = function() {
                 var lm={
                     "title":"123" , "date": "10-10-16", "content": "<p>Damn it</p>"
                 };
-                div.innerHTML = createTemplate(lm).toString();
+                div.innerHTML = c(lm);
             }
         }
     };
