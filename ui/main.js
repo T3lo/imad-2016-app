@@ -1,4 +1,24 @@
-/*var body = document.getElementById('set');
+/*
+function call (i) {
+    var div = document.getElementById('test');
+    div.innerHTML = '<p>qwerty</p>';
+
+    var request = new XMLHttpRequest();
+    request.onreadystatechange = function () {
+        if( request.readyState === XMLHttpRequest.DONE) {
+            if( request.status === 200 ) {
+                var txt = request.responseText;
+                txt = JSON.parse(txt);
+                div.innerHTML += "<div id='one'><div><p>"+txt["title"]+"</p></div><div>"+txt["content"]+"</div></div>";
+            }
+        }
+    };
+        request.open('GET', 'http://t3lo.imad.hasura-app.io/div/'+i, true);
+        request.send(null);
+        
+}
+
+var body = document.getElementById('set');
 body.onload = function() {
     for(var i=1;i<=2;i++) {
         call(i);
