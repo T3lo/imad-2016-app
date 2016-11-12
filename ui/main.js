@@ -6,10 +6,12 @@ body.onload = function() {
         if( request.readyState === XMLHttpRequest.DONE) {
             if( request.status === 200 ) {
                 var txt = request.responseText;
-                alert(txt);
+                var div = document.getElementById('test');
+                div.innerHTML = txt;
             }
         }
     };
+    
     
     request.open('GET', 'http://t3lo.imad.hasura-app.io/div', true);
     request.send(null);
