@@ -2,6 +2,10 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 var Pool = require('pg').Pool;
+
+var app = express();
+app.use(morgan('combined'));
+
 /*
 var config = {
     user: 't3lo',
@@ -10,8 +14,6 @@ var config = {
     port: '5432',
     password: process.env.DB_PASSWORD
 };
-var app = express();
-app.use(morgan('combined'));
 
 
 function createTemplate (data) {
