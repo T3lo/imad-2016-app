@@ -38,10 +38,10 @@ body.onload = function() {
         }
     };
     
-//    for(var i=0;i<2;i++){
-        request.open('GET', 'http://t3lo.imad.hasura-app.io/div', true);
+    for(var i=0;i<2;i++){
+        request.open('GET', 'http://t3lo.imad.hasura-app.io/div?name='+i, true);
         request.send(null);
-//    }
+    }
 };
 
 var submit = document.getElementById('submit_btn');
