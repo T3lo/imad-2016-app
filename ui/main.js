@@ -31,7 +31,7 @@ var htmlTemplate=`
                 var txt = request.responseText;
                 txt = JSON.parse(txt);
                 var div = document.getElementById('test');
-                div.innerHTML = 'tx';
+                div.innerHTML = createTemplate(txt);
             }
         }
     };
