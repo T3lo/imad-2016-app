@@ -28,7 +28,10 @@ body.onload = function() {
                 var txt = request.responseText;
                 txt = JSON.parse(txt);
                 var div = document.getElementById('test');
-                div.innerHTML = createTemplate(txt);
+                var lm={
+                    "title":"123" , "date": "10-10-16", "content": "<p>Damn it</p>"
+                };
+                div.innerHTML = createTemplate(lm);
             }
         }
     };
