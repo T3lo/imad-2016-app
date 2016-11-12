@@ -75,12 +75,18 @@ app.get('/test-db', function(req , res){
 
 app.get('/div', function(req , res){
 
-   pool.query('SELECT * FROM divs WHERE id = 1' , function(err , result){
+   pool.query('SELECT * FROM divs WHERE id = $1' ,[req.params.articleName] , function(err , result){
       if(err) {
           res.status(500).send(err.toString());
       }
       else{
-          res.send(JSON.stringify(result.rows[0]));
+         if(result.rows.length === 0) {
+             res.status(404).send('Article not found');
+         } else {
+//             res.send(JSON.stringify(result.rows));
+             var articleData = result.rows[0];
+             res.send(createTemplate(articleData));
+         }
       }
    });
 });
