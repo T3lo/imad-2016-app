@@ -36,7 +36,7 @@ body.onload = function() {
             }
         }
     };
-        request.open('GET', 'http://t3lo.imad.hasura-app.io/div/'+1, true);
+        request.open('GET', 'http://t3lo.imad.hasura-app.io/div/'+2, true);
         request.send(null);
         
 };
