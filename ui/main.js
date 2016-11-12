@@ -2,6 +2,8 @@ function createTemplate (data) {
     var title=data.title;
     var date=data.date;
     var content=data.content;
+    
+    alert('hi');
 
 var htmlTemplate=`
         <div>
