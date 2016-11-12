@@ -28,7 +28,10 @@ body.onload = function() {
                 var txt = request.responseText;
                 txt = JSON.parse(txt);
                 var div = document.getElementById('test');
-                div.innerHTML = txt["id"].toString();
+                var ln = {
+                    f:"rerer" , s: "234234"
+                };
+                div.innerHTML = ln["f"];
             }
         }
     };
