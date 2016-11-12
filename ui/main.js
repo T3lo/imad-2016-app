@@ -20,10 +20,10 @@ function call (i) {
 
 var body = document.getElementById('set');
 body.onload = function() {
-/*    for(var i=1;i<=2;i++) {
+    for(var i=1;i<=2;i++) {
         call(i);
     }
-  */  var div = document.getElementById('test');
+/*    var div = document.getElementById('test');
     div.innerHTML = '<p>qwerty</p>';
 
     var request = new XMLHttpRequest();
@@ -37,7 +37,7 @@ body.onload = function() {
         }
     };
         request.open('GET', 'http://t3lo.imad.hasura-app.io/div/'+2, true);
-        request.send(null);
+        request.send(null);*/
         
 };
 
