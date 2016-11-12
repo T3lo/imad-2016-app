@@ -31,7 +31,7 @@ body.onload = function() {
                 var ln = {
                     "f":"rerer" , s: "234234"
                 };
-                div.innerHTML = ln["f"];
+                div.innerHTML = txt["id"];
             }
         }
     };
