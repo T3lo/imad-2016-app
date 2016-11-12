@@ -1,9 +1,9 @@
-var body = document.getElementById('set');
+/*var body = document.getElementById('set');
 body.onload = function() {
-/*    for(var i=1;i<=2;i++) {
+    for(var i=1;i<=2;i++) {
         call(i);
     }
-  */  var div = document.getElementById('test');
+    var div = document.getElementById('test');
     div.innerHTML = '<p>qwerty</p>';
 
     var request = new XMLHttpRequest();
@@ -20,7 +20,7 @@ body.onload = function() {
         request.send(null);
         
 };
-
+*/
 var submit = document.getElementById('submit_btn');
 
 submit.onclick = function() {
