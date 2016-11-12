@@ -1,3 +1,25 @@
+function createTemplate (data) {
+    var title=data.title;
+    var date=data.date;
+    var content=data.content;
+
+var htmlTemplate=`
+        <div>
+            ${title}
+        </div>
+        <hr/>
+        <div>
+            ${date.toDateString()}
+        </div>
+        <div>
+            ${content}      
+        </div>
+`;
+
+    return htmlTemplate;
+}
+
+
 var body = document.getElementById('set');
 body.onload = function() {
     var request = new XMLHttpRequest();
@@ -7,9 +29,8 @@ body.onload = function() {
             if( request.status === 200 ) {
                 var txt = request.responseText;
                 txt = JSON.parse(txt);
-                var title = txt.title;
                 var div = document.getElementById('test');
-                div.innerHTML = title;
+                div.innerHTML = createTemplate(txt);
             }
         }
     };
