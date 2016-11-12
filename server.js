@@ -73,7 +73,7 @@ app.get('/test-db', function(req , res){
    });
 });
 
-app.get('/div', function(req , res){
+app.get('/div/:articleName', function(req , res){
 
    pool.query('SELECT * FROM divs WHERE id = $1' ,[req.params.articleName] , function(err , result){
       if(err) {
