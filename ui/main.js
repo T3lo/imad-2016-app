@@ -3,7 +3,8 @@ body.onload = function() {
 
     var div = document.getElementById('test');
     div.innerHTML = '<p>qwerty</p>';
-for(var i=1;i<=2;i++) {
+    var lst="";
+for(var i=1;i<=4;i++) {
     var request = new XMLHttpRequest();
     request.onreadystatechange = function () {
         if( request.readyState === XMLHttpRequest.DONE) {
@@ -14,7 +15,7 @@ for(var i=1;i<=2;i++) {
                 var lm={
                     "title":"123" , "date": "10-10-16", "content": "<p>Damn it</p>"
                 };
-                div.innerHTML += "<div id='one'><div><p>"+txt["title"]+"</p></div><div>"+txt["content"]+"</div></div>";
+                lst += "<div id='one'><div><p>"+txt["title"]+"</p></div><div>"+txt["content"]+"</div></div>";
             }
         }
     };
