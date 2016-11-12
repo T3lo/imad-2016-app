@@ -22,7 +22,7 @@ var htmlTemplate=`
 var body = document.getElementById('set');
 body.onload = function() {
     var div = document.getElementById('test');
-    div.innerHTML = '';
+    div.innerHTML = '45';
     var request = new XMLHttpRequest();
     request.onreadystatechange = function () {
         if( request.readyState === XMLHttpRequest.DONE) {
@@ -34,7 +34,6 @@ body.onload = function() {
                     "title":"123" , "date": "10-10-16", "content": "<p>Damn it</p>"
                 };
                 div.innerHTML += "<div id='one'><div><p>"+txt["title"]+"</p></div><div>"+txt["content"]+"</div></div>";
-                
             }
         }
     };
