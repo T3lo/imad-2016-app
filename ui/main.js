@@ -3,19 +3,7 @@ function c (data) {
     var date=data.date;
     var content=data.content;
 
-var htmlTemplate=`
-        <div>
-            123
-            ${title}
-        </div>
-        <hr/>
-        <div>
-            ${date.toDateString()}
-        </div>
-        <div>
-            ${content}      
-        </div>
-`;
+var htmlTemplate="hello does it work";
 
     return htmlTemplate;
 }
