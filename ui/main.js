@@ -31,7 +31,7 @@ body.onload = function() {
                 var ln = {
                     "f":"rerer" , s: "234234"
                 };
-                div.innerHTML = txt;
+                div.innerHTML = txt.toString();
             }
         }
     };
