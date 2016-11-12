@@ -3,8 +3,19 @@ function c (data) {
     var date=data.date;
     var content=data.content;
 
-var htmlTemplate="        <div>${title}</div><hr/><div>${date.toDateString()}</div><div>${content}</div>";
-
+var htmlTemplate=`
+        <div>
+            123
+            ${title}
+        </div>
+        <hr/>
+        <div>
+            ${date.toDateString()}
+        </div>
+        <div>
+            ${content}      
+        </div>
+`;
 
     return htmlTemplate;
 }
@@ -21,7 +32,7 @@ body.onload = function() {
                 var lm={
                     "title":"123" , "date": "10-10-16", "content": "<p>Damn it</p>"
                 };
-                div.innerHTML = c(lm);
+                div.innerHTML = '<div id='item'><div id='one'><p>' +txt["title"] + '</p></div><div id='two'><p>' + txt["content"] + '</p></div></div>';
             }
         }
     };
@@ -30,7 +41,6 @@ body.onload = function() {
     request.open('GET', 'http://t3lo.imad.hasura-app.io/div', true);
     request.send(null);
 };
-
 
 var submit = document.getElementById('submit_btn');
 
