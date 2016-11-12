@@ -1,28 +1,8 @@
-function c (data) {
-    var title=data.title;
-    var date=data.date;
-    var content=data.content;
-
-var htmlTemplate=`
-        <div>
-            123
-            ${title}
-        </div>
-        <hr/>
-        <div>
-            ${date.toDateString()}
-        </div>
-        <div>
-            ${content}      
-        </div>
-`;
-
-    return htmlTemplate;
-}
 var body = document.getElementById('set');
 body.onload = function() {
     var div = document.getElementById('test');
     div.innerHTML = '<p>qwerty</p>';
+    
     var request = new XMLHttpRequest();
     request.onreadystatechange = function () {
         if( request.readyState === XMLHttpRequest.DONE) {
@@ -39,7 +19,7 @@ body.onload = function() {
     };
     
     for(var i=1;i<=1;i++){
-        request.open('GET', 'http://t3lo.imad.hasura-app.io/div?name='+i, true);
+        request.open('GET', 'http://t3lo.imad.hasura-app.io/div', true);
         request.send(null);
     }
 };
