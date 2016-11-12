@@ -80,7 +80,6 @@ app.get('/div', function(req ,res) {
       }
       else{
           res.send(JSON.stringify(result.rows));
-     //       res.send(result.rows);
       }
    });  
   
