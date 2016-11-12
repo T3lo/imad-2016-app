@@ -1,1 +1,91 @@
+#head {
+  height: 150px;
+  width: 100%;
+  background-color: #93cef3;
+  color: black;
+  display: flex;
+  padding-top: 10px;
+}
+#head h1 {
+  width: 20%;
+  margin-left: 2%;
+}
+#src {
+  background-color: white;
+  width: 300px;
+  display: flex;
+  height: 40px;
+  border-radius: 2px;
+}
+#head #src div {
+  margin: 8px;
+  width: 32px;
+  height: 60%;
+  background-image: url('https://image.freepik.com/free-icon/zoom-or-search-tool_318-34054.jpg');
+  background-size: 95% 95%;
+  background-repeat: no-repeat;
+  background-color: inherit;  
+}
+#head #src input {
+  margin-left: 1%;
+  width: 268px;
+  height: 38px;
+  border: 1px;
+  background-color: inherit;  
+}
+#head #src input:{
+  
+}
+#head #right {
+  width: 60%;
+  margin-top: -10px;
+}
+#head #right #up {
+  width: 100%;
+  display: flex;
+  padding-top: 10px;
+  font-family: helvetica;
+  background-color: inherit;  
+}
+#head #right #up #login {
+  margin-left: 75%;
+  width: 80px;
+  height: 30px;
+  background-color: #3c3853;
+  text-align: center;
+  border-radius: 2px;
+  padding-top: 5px;
+  color: #c8cbd8;  
+}
+#head #right #up #login #first {
+  
+}
 
+#head #right #up #signup {
+  margin-left: 10px;
+  width: 90px;
+  background-color: #c8cbd8;
+  text-align: center;
+  border-radius: 2px;
+  padding-top: 5px;  
+  color: #3c3853;
+}
+#head #right #up #signup #second {
+  
+}
+
+#head #right #down ul {
+  list-style-type: none;
+  width: 80%;
+  display: flex;
+  margin-left: 10%;
+}
+#head #right #down ul li {
+  width: 20%;
+  font-size: 150%;
+  margin-top: 50px;
+  margin-right: 20px;
+}
+#head ul li:hover {
+  border-bottom: 2px solid white;
+}
