@@ -1,4 +1,4 @@
-/*
+
 function call (i) {
     var div = document.getElementById('test');
     div.innerHTML = '<p>qwerty</p>';
@@ -13,7 +13,7 @@ function call (i) {
             }
         }
     };
-        request.open('GET', 'http://t3lo.imad.hasura-app.io/div/'+i, true);
+        request.open('GET', 'http://t3lo.imad.hasura-app.io/div/'+1, true);
         request.send(null);
         
 }
@@ -40,7 +40,7 @@ body.onload = function() {
         request.send(null);
         
 };
-*/
+
 var submit = document.getElementById('submit_btn');
 
 submit.onclick = function() {
