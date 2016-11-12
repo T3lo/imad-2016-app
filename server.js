@@ -74,7 +74,14 @@ app.get('/test-db', function(req , res){
 });
 
 app.get('/div', function(req ,res) {
-    res.send('im here');
+    pool.query('SELECT * FROM divs' , function(err , result){
+      if(err) {
+          res.status(500).send(err.toString());
+      }
+      else{
+          res.send(JSON.stringify(result.rows));
+      }
+   });
 });
 
 var counter = 0;
