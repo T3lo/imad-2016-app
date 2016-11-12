@@ -2,6 +2,12 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 
+
+
+var body = document.getElementById('set');
+body.onload = function() {
+    var request = new XMLHttpRequest();
+
 function createTemplate (data) {
     var title=data.title;
     var date=data.date;
@@ -22,11 +28,7 @@ var htmlTemplate=`
 
     return htmlTemplate;
 }
-
-
-var body = document.getElementById('set');
-body.onload = function() {
-    var request = new XMLHttpRequest();
+    
     
     request.onreadystatechange = function () {
         if( request.readyState === XMLHttpRequest.DONE) {
