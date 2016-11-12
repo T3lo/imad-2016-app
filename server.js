@@ -111,7 +111,7 @@ app.get('/articles/:articleName', function(req, res) {
          } else {
 //             res.send(JSON.stringify(result.rows));
              var articleData = result.rows[0];
-             res.send(result.rows);
+             res.send(result.rows[0]);
          }
      }
   });
