@@ -1,13 +1,10 @@
 var body = document.getElementById('set');
 body.onload = function() {
 
-for(var i=1;i<=2;i++) {
     var div = document.getElementById('test');
     div.innerHTML = '<p>qwerty</p>';
-    
+for(var i=1;i<=2;i++) {
     var request = new XMLHttpRequest();
-    
-    
     request.onreadystatechange = function () {
         if( request.readyState === XMLHttpRequest.DONE) {
             if( request.status === 200 ) {
@@ -21,8 +18,6 @@ for(var i=1;i<=2;i++) {
             }
         }
     };
-    
-
         request.open('GET', 'http://t3lo.imad.hasura-app.io/div/'+i, true);
         request.send(null);
 }
