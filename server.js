@@ -79,10 +79,10 @@ app.get('/div', function(req ,res) {
           res.status(500).send(err.toString());
       }
       else{
-          res.send(JSON.stringify(result.rows));
+ //         res.send(JSON.stringify(result.rows));
       }
    });  
-//   res.send('im here');  
+   res.send(result.rows);  
 });
 
 var counter = 0;
