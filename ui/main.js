@@ -1,8 +1,3 @@
-var express = require('express');
-var morgan = require('morgan');
-var path = require('path');
-
-
 
 var body = document.getElementById('set');
 body.onload = function() {
