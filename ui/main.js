@@ -1,3 +1,9 @@
+var body = document.getElementById('set');
+body.onload = function() {
+    alert('loaded');
+}
+
+
 var submit = document.getElementById('submit_btn');
 
 submit.onclick = function() {
