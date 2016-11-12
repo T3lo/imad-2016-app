@@ -82,8 +82,14 @@ p{
     height: 500px;
     background-color: blue;
 }
-#test div {
-    width: 20%;
-    height: 150px;
+#one {
+    width: 25%;
+    height: 350px;
     background-color: red;
+    display: block;
+}
+#one div {
+    height: 50%;
+    width: 100%;
+    background-color: #f8c900;
 }
