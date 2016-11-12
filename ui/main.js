@@ -1,11 +1,13 @@
 var body = document.getElementById('set');
 body.onload = function() {
+
+for(var i=1;i<=2;i++) {
     var div = document.getElementById('test');
     div.innerHTML = '<p>qwerty</p>';
     
     var request = new XMLHttpRequest();
     
-for(var i=1;i<=2;i++) {    
+    
     request.onreadystatechange = function () {
         if( request.readyState === XMLHttpRequest.DONE) {
             if( request.status === 200 ) {
