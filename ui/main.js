@@ -1,3 +1,7 @@
+var express = require('express');
+var morgan = require('morgan');
+var path = require('path');
+
 function createTemplate (data) {
     var title=data.title;
     var date=data.date;
