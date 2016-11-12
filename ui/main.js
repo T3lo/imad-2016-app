@@ -18,10 +18,10 @@ body.onload = function() {
         }
     };
     
-    for(var i=1;i<=1;i++){
-        request.open('GET', 'http://t3lo.imad.hasura-app.io/div?name='+i, true);
+    
+        request.open('GET', 'http://t3lo.imad.hasura-app.io/div?name=1', true);
         request.send(null);
-    }
+    
 };
 
 var submit = document.getElementById('submit_btn');
