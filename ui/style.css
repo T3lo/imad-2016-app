@@ -85,6 +85,7 @@ p{
 #one {
     width: 25%;
     height: 350px;
+    margin: 5px;
     background-color: red;
     display: block;
 }
