@@ -82,7 +82,6 @@ app.get('/div', function(req ,res) {
           res.send(JSON.stringify(result.rows));
       }
    });  
-  
 });
 
 var counter = 0;
