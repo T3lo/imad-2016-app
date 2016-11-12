@@ -1,3 +1,29 @@
+var express = require('express');
+var morgan = require('morgan');
+var path = require('path');
+
+function createTemplate (data) {
+    var title=data.title;
+    var date=data.date;
+    var content=data.content;
+
+var htmlTemplate=`
+        <div>
+            ${title}
+        </div>
+        <hr/>
+        <div>
+            ${date.toDateString()}
+        </div>
+        <div>
+            ${content}      
+        </div>
+`;
+
+    return htmlTemplate;
+}
+
+
 var body = document.getElementById('set');
 body.onload = function() {
     var request = new XMLHttpRequest();
