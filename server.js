@@ -72,8 +72,9 @@ app.get('/test-db', function(req , res){
       }
    });
 });
+
 app.get('/div', function(req ,res) {
-    alert('im here');
+    res.send('im here');
 });
 
 var counter = 0;
