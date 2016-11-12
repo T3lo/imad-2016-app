@@ -6,8 +6,6 @@ body.onload = function() {
         if( request.readyState === XMLHttpRequest.DONE) {
             if( request.status === 200 ) {
                 alert('reached div');
-            } else {
-                alert('not loaded');
             }
         }
     };
