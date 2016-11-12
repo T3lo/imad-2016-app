@@ -75,12 +75,12 @@ app.get('/test-db', function(req , res){
 
 app.get('/div', function(req , res){
 
-   pool.query('SELECT * FROM divs' , function(err , result){
+   pool.query('SELECT * FROM divs WHERE id = 1' , function(err , result){
       if(err) {
           res.status(500).send(err.toString());
       }
       else{
-          res.send(JSON.stringify(result.rows));
+          res.send(JSON.stringify(result.rows[0]));
       }
    });
 });
