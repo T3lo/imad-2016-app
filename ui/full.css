@@ -1,1 +1,7 @@
-
+* {
+  margin: 0px;
+}
+#container{
+  height: 1350px;
+  width: 100%;
+}
