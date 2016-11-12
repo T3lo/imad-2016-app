@@ -28,7 +28,7 @@ body.onload = function() {
                 var txt = request.responseText;
                 txt = JSON.parse(txt);
                 var div = document.getElementById('test');
-                div.innerHTML = txt.id.toString();
+                div.innerHTML = txt.content;
             }
         }
     };
