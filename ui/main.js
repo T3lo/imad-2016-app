@@ -6,10 +6,10 @@ body.onload = function() {
         if( request.readyState === XMLHttpRequest.DONE) {
             if( request.status === 200 ) {
                 var txt = request.responseText;
-                //txt = JSON.parse(txt);
-                //var date = txt.content;
+                txt = JSON.parse(txt);
+                var title = txt.title;
                 var div = document.getElementById('test');
-                div.innerHTML = txt;
+                div.innerHTML = title;
             }
         }
     };
