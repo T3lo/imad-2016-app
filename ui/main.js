@@ -15,7 +15,7 @@ for(var i=1;i<=4;i++) {
                 var lm={
                     "title":"123" , "date": "10-10-16", "content": "<p>Damn it</p>"
                 };
-                div,innerHTML += "<div id='one'><div><p>"+txt["title"]+"</p></div><div>"+txt["content"]+"</div></div>";
+                div.innerHTML += "<div id='one'><div><p>"+txt["title"]+"</p></div><div>"+txt["content"]+"</div></div>";
             }
         }
     };
