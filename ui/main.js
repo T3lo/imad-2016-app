@@ -9,7 +9,7 @@ body.onload = function() {
                 txt = JSON.parse(txt);
                 var date = txt.content;
                 var div = document.getElementById('test');
-                div.innerHTML = date.toString();
+                div.innerHTML = txt.toString();
             }
         }
     };
