@@ -1,27 +1,24 @@
 var body = document.getElementById('set');
 body.onload = function() {
-
-    var div = document.getElementById('test');
+/*    for(var i=1;i<=2;i++) {
+        call(i);
+    }
+  */  var div = document.getElementById('test');
     div.innerHTML = '<p>qwerty</p>';
-    var lst="";
-for(var i=1;i<=4;i++) {
+
     var request = new XMLHttpRequest();
     request.onreadystatechange = function () {
         if( request.readyState === XMLHttpRequest.DONE) {
             if( request.status === 200 ) {
                 var txt = request.responseText;
                 txt = JSON.parse(txt);
-
-                var lm={
-                    "title":"123" , "date": "10-10-16", "content": "<p>Damn it</p>"
-                };
                 div.innerHTML += "<div id='one'><div><p>"+txt["title"]+"</p></div><div>"+txt["content"]+"</div></div>";
             }
         }
     };
         request.open('GET', 'http://t3lo.imad.hasura-app.io/div/'+i, true);
         request.send(null);
-}
+        
 };
 
 var submit = document.getElementById('submit_btn');
