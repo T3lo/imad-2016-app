@@ -28,7 +28,7 @@ body.onload = function() {
                 var txt = request.responseText;
                 txt = JSON.parse(txt);
                 var div = document.getElementById('test');
-                div.innerHTML = '<div>' + txt["title"] + '</div>' + '<div>' + txt["content"] + '</div>';
+                div.innerHTML = createTemplate(txt);
             }
         }
     };
