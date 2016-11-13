@@ -19,6 +19,8 @@ div.innerHTML += "</p></div><div id='t3'><p></p></div></div>";
 
 var body = document.getElementById('set');
 body.onload = function() {
+    
+    alert('hi');
     for(var i=1;i<=8;i++) {
         call(i);
     }
