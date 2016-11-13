@@ -155,6 +155,22 @@ app.get('/MyBLog', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'MyBLog.html'));
 });
 
+app.get('/ui/foot.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'foot.css'));
+});
+
+app.get('/ui/full.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'full.css'));
+});
+
+app.get('/ui/bhead.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'bhead.css'));
+});
+
+app.get('/ui/bmain.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'bmain.css'));
+});
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
