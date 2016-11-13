@@ -19,7 +19,7 @@ div.innerHTML += "</p></div><div id='t3'><p></p></div></div>";
 
 var body = document.getElementById('set');
 body.onload = function() {
-    
+                alert('hi there');    
 /*    for(var i=1;i<=1;i++) {
         call(i);
         alert('hi');
@@ -29,7 +29,7 @@ body.onload = function() {
     request.onreadystatechange = function () {
         if( request.readyState === XMLHttpRequest.DONE) {
             if( request.status === 200 ) {
-                alert('hi there');
+             //   alert('hi there');
             }
         }
     };
