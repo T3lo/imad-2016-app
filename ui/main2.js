@@ -1,5 +1,5 @@
 function call (i) {
-    var div = document.getElementById('test');
+    var div = document.getElementById('one');
     div.innerHTML = '<p>qwerty</p>';
 
     var request = new XMLHttpRequest();
