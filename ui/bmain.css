@@ -14,3 +14,50 @@
   margin-left: 12px;  
   width: 25%;
 }
+#one>div {
+  margin: auto;
+  height: 350px;
+  width: 92%;
+  background-color: inherit;
+}
+
+#one #t1 {
+  height: 8%;
+  width: 96%;
+  margin: 0px;
+  padding: 2% 2% 0 2%;
+  background-color: #8a32dd;
+  color: white;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  direction: flex;
+}
+
+p {
+  margin-top: 10px;
+}
+#one #t2 {
+  height: 80%;
+  width: 96%;
+  margin: 0px;
+  padding: 2%;
+  background-color: #fafdff;
+}
+#one #t2 p {
+  font-size: 15px;
+  
+}
+#one #t3 {
+  height: 8%;
+  width: 96%;
+  margin: 0px;
+  padding: 2% 2% 0 2%;
+  background-color: #dddb32;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+#t2 img {
+  width: 100%;
+  height: 50%;
+  margin: 0px;
+}
