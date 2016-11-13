@@ -21,8 +21,9 @@ var body = document.getElementById('set');
 body.onload = function() {
     
     alert('hi');
-    for(var i=1;i<=8;i++) {
+    for(var i=1;i<=2;i++) {
         call(i);
+        alert('hi');
     }
 };
 
