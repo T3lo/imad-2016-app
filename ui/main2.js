@@ -1,6 +1,6 @@
 function call (i) {
     var div = document.getElementById('one');
-    div.innerHTML = '<p>qwerty</p>';
+    div.innerHTML = '';
 
     var request = new XMLHttpRequest();
     request.onreadystatechange = function () {
@@ -22,7 +22,6 @@ body.onload = function() {
 
     for(var i=1;i<=1;i++) {
         call(i);
-        alert('hi');
     }   
 };
 
