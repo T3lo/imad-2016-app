@@ -1,4 +1,4 @@
-
+/*
 function call (i) {
     var div = document.getElementById('test');
     div.innerHTML = '<p>qwerty</p>';
@@ -24,7 +24,7 @@ body.onload = function() {
         call(i);
     }
 };
-
+*/
 var submit = document.getElementById('submit_btn');
 
 submit.onclick = function() {
