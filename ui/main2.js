@@ -1,4 +1,4 @@
-/*function call (i) {
+function call (i) {
     var div = document.getElementById('test');
     div.innerHTML = '<p>qwerty</p>';
 
@@ -24,4 +24,3 @@ body.onload = function() {
     }
 };
 
-*/
