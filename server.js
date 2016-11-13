@@ -155,8 +155,8 @@ app.get('/MyBLog', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'MyBLog.html'));
 });
 
-app.get('/ui/foot.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'foot.css'));
+app.get('/ui/bfoot.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'bfoot.css'));
 });
 
 app.get('/ui/full.css', function (req, res) {
