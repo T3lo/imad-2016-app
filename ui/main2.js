@@ -20,20 +20,9 @@ div.innerHTML += "</p></div><div id='t3'><p></p></div></div>";
 var body = document.getElementById('set');
 body.onload = function() {
 
-/*    for(var i=1;i<=1;i++) {
+    for(var i=1;i<=1;i++) {
         call(i);
         alert('hi');
-    }   */
-    
-    var request = new XMLHttpRequest();
-    request.onreadystatechange = function () {
-        if( request.readyState === XMLHttpRequest.DONE) {
-            if( request.status === 200 ) {
-                alert('hi there');
-            }
-        }
-    };
-        request.open('GET', 'http://t3lo.imad.hasura-app.io/div/'+1, true);
-        request.send(null);
+    }   
 };
 
