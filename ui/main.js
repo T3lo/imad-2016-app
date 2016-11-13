@@ -9,13 +9,13 @@ function call (i) {
             if( request.status === 200 ) {
                 var txt = request.responseText;
                 txt = JSON.parse(txt);
-                div.innerHTML += "<div id='one'><div><p>"+txt["title"]+"</p></div><div>"+txt["content"]+"</div></div>";
+div.innerHTML += "<div><div id='t1'><p>"+txt["date"]+"</p></div><div id='t2'><img id='shot' src="+txt["link"]+"/><p>"+txt["field"];
+div.innerHTML += "</p></div><div id='t3'><p></p></div></div>";
             }
         }
     };
         request.open('GET', 'http://t3lo.imad.hasura-app.io/div/'+i, true);
         request.send(null);
-        
 }
 
 var body = document.getElementById('set');
