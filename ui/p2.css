@@ -1,0 +1,54 @@
+#two {
+    font-family: sans;
+}
+#two .stop{
+  height: 1px;
+}
+#two #p2_head {
+  color: white;
+  font-size: 50px;
+  height: 100px;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 50px;
+  font-weight: 100;  
+}
+#two #p2_head p {
+  text-align: center;
+}
+#two #p2_block1 {
+  width: 40%;
+  height: 90px;
+  margin-left: 30%;
+  color: #fff;
+}
+#two #p2_block1 p {
+  text-align: center;
+}
+#two #p2_block2 {
+  height: 210px;
+  width: 210px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#p2_block2 #p2_up {
+  height: 100px;
+  display: flex;
+}
+#p2_block2 #p2_down {
+  height: 100px;
+  display: flex;
+  margin-top: 5px;  
+}
+#p2_block2 .interest {
+  width: 100px;
+  height: 100px;
+  background-color: whitesmoke;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+}
+#p2_block2 .interest img {
+  border-radius: 50%;
+}

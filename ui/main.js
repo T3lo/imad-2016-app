@@ -1,75 +1,130 @@
-/*
-function call (i) {
-    var div = document.getElementById('test');
-    div.innerHTML = '<p>qwerty</p>';
+var item = document.getElementsByClassName('item');
+var sk = document.getElementsByClassName('sk');
 
-    var request = new XMLHttpRequest();
-    request.onreadystatechange = function () {
-        if( request.readyState === XMLHttpRequest.DONE) {
-            if( request.status === 200 ) {
-                var txt = request.responseText;
-                txt = JSON.parse(txt);
-div.innerHTML += "<div><div id='t1'><p>"+txt["date"]+"</p></div><div id='t2'><img id='shot' src="+txt["link"]+"/><p>"+txt["field"];
-div.innerHTML += "</p></div><div id='t3'><p></p></div></div>";
-            }
-        }
-    };
-        request.open('GET', 'http://t3lo.imad.hasura-app.io/div/'+i, true);
-        request.send(null);
-}
+var b1 = document.getElementById('b1');
+var b2 = document.getElementById('b2');
+var b3 = document.getElementById('b3');
+var b4 = document.getElementById('b4');
+var b5 = document.getElementById('b5');
 
-var body = document.getElementById('set');
-body.onload = function() {
-    for(var i=1;i<=8;i++) {
-        call(i);
-    }
-};
-*/
-var submit = document.getElementById('submit_btn');
+var open=1;
+var trbl1 = document.getElementById('one');
+var trbl2 = document.getElementById('two');
+var trbl3 = document.getElementById('three');
+var trbl4 = document.getElementById('four');
 
-submit.onclick = function() {
-  //create a request Object
-  var request = new XMLHttpRequest();
-  
-  //capture the response and store it in a variable 
-  request.onreadystatechange = function(){
-      if(request.readyState === XMLHttpRequest.DONE){
-          if(request.status === 200){
-             var names = request.responseText;
-             names = JSON.parse(names);
-             var list = '';
-            for(var i=0;i<names.length;i++){
-                list += '<li>' + names[i] + '</li>';
-            }
-            var ul=document.getElementById('namelist');
-            ul.innerHTML = list;
-          }
-      }
-  } ;
-  
-  var field = document.getElementById('name');
-  var name = field.value;
-  request.open('GET', 'http://t3lo.imad.hasura-app.io/submit-name?name=' + name, true);
-  request.send(null);      
 
+b2.onclick = function () {
+	
+	if( open > 2 ) {
+		trbl4.style.marginLeft = '0';
+		trbl3.style.marginLeft = '0';
+		trbl2.style.marginLeft = '0';
+	}
+	else {
+		if(open < 2) {
+				trbl1.style.marginLeft = '-100%';
+		}
+	}
+  	
+	for(var i=0;i<6;i++){
+	    item[i].style.fill = "#ff9d1e";
+	}
+	sk[0].style.color = "#ff9d1e";
+	sk[1].style.color = "#ff9d1e";
+	
+	open = 2;
+	console.log(open);
 };
 
 
-var button = document.getElementById('counter');
-button.onclick = function() {
-  var request = new XMLHttpRequest()  ;
-  
-  request.onreadystatechange = function() {
-    if(request.readyState === XMLHttpRequest.DONE) {
-        if(request.status === 200){
-            var res = request.responseText ;
-            var span = document.getElementById('count') ;
-            span.innerHTML = res ;
-        }
-    }
-  };
-  
-  request.open('GET', 'http://t3lo.imad.hasura-app.io/counter' , true);
-  request.send(null);
-  
+b3.onclick = function () {
+	
+	if( open > 3 ) {
+    trbl3.style.marginLeft = '0';
+		trbl4.style.marginLeft = '0';		
+	}
+	else {
+		if(open < 3) {
+			trbl1.style.marginLeft = '-100%';
+      trbl2.style.marginLeft = '-100%';
+		}
+	}
+  	
+	for(var i=0;i<6;i++){
+	    item[i].style.fill = "#ff9d1e";
+	}
+	sk[0].style.color = "#ff9d1e";
+	sk[1].style.color = "#ff9d1e";
+	
+	open = 3;
+	console.log(open);
+};
+
+
+
+b4.onclick = function () {
+
+	if( open > 4 ) {
+			trbl4.style.marginLeft = '0';
+	}
+	else {
+		if(open < 4) {		
+      trbl1.style.marginLeft = '-100%';
+			trbl2.style.marginLeft = '-100%';
+			trbl3.style.marginLeft = '-100%';
+		}
+	}
+	setTimeout( function() {
+		
+	   for(var i=0;i<6;i++){
+		    item[i].style.fill = "white";
+	   }
+		sk[0].style.color = "white";
+		sk[1].style.color = "white";
+	}, 1000);
+
+	open = 4;
+	console.log(open);
+};
+
+
+b5.onclick = function () {
+
+	if( open < 5 ) {
+				trbl1.style.marginLeft = '-100%';
+				trbl2.style.marginLeft = '-100%';
+				trbl3.style.marginLeft = '-100%';
+				trbl4.style.marginLeft = '-100%';
+	}
+		
+	for(var i=0;i<6;i++){
+	    item[i].style.fill = "#ff9d1e";
+	}
+	sk[0].style.color = "#ff9d1e";
+	sk[1].style.color = "#ff9d1e";	
+	
+	open = 5;
+	console.log(open);
+	
+};
+
+
+b1.onclick = function () {
+
+	if( open > 1 ) {		
+		trbl4.style.marginLeft = '0';
+    trbl3.style.marginLeft = '0';
+		trbl2.style.marginLeft = '0';
+	  trbl1.style.marginLeft = '0';			
+	}
+	
+	for(var i=0;i<6;i++){
+	    item[i].style.fill = "#ff9d1e";
+	}
+	sk[0].style.color = "#ff9d1e";
+	sk[1].style.color = "#ff9d1e";
+	
+	open = 1;
+	console.log(open);
 };

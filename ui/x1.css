@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+#profile_pic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+#main {
+  height: 100%;
+}
+#main>div {
+  position: absolute;
+  width: 100%;
+  transition: margin-left 1s;
+}
+#main #nav{
+  top: 85%;
+  width: 30%;
+  height: 10%;
+  margin-left: 35%;
+  z-index: 100;
+  display: flex;
+  background-color: inherit;  
+}
+#nav div{
+  width: 40px;
+  height: 40px;
+  border-radius: 2px;
+  margin: auto;
+  margin-top: 50%;
+  background-color: inherit;  
+  border-radius: 50%;
+}
+#nav div:hover {
+  background-color: #eee;
+  filter: grayscale(100%);
+}
+#nav div img:hover {
+  height: 100%;
+  width: 100%;
+}
+#one {
+  background-color: white;
+  font-family: sans;  
+  z-index: 40;
+}
+#two {
+  background-color: #a31ccc;
+  z-index: 30;
+}
+#three {
+  background-color: #52aa25;
+  z-index: 20;
+}
+#four {
+  background-color: #ff9d1e;
+  z-index: 10;
+}
+#five {
+  background-color: #47777d;
+  z-index: 0;
+}

@@ -1,0 +1,48 @@
+#main #one .up {
+  height: 300px;
+  width: 100%;
+  background-image: url('http://eskipaper.com/images/gray-wallpaper-10.jpg');
+  color: white;
+}
+.up #uptop {
+  height: 50%;
+}
+#uptop .stop {
+  height: 1px;
+}
+#uptop #one_blog {
+  margin-top: 10px;
+  margin-left: 90%;
+  border: 2px solid;
+  height: 35px;
+  width: 80px;
+}
+#one_blog #one_blog_txt {
+  text-align: center;
+  height: 14px;
+  margin-top: 7px;  
+}
+.up #name {
+  margin-left: 12%;
+  width: 76%;
+  height: 40%;
+  margin-top: 90px;
+  text-align: center;
+}
+#name p{
+  font-size: 50px;  
+  font-weight: 100;  
+}
+#main #one .down {
+  margin-left: 12%;
+  width: 76%;
+  height: 20%;
+  color: #151630;
+}
+.down p {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 5px;
+  color: gray;
+  font-weight: 100;  
+}
