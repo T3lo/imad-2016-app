@@ -62,6 +62,29 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'dummy.html'));
 });
 
+app.get('/x1.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'x1.css'));
+});
+
+app.get('/p1.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'p1.css'));
+});
+
+app.get('/x1.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'p2.css'));
+});
+
+app.get('/x1.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'p3.css'));
+});
+
+app.get('/x1.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'p4.css'));
+});
+
+app.get('/x1.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'p5.css'));
+});
 
 var pool = new Pool(config);
 app.get('/test-db', function(req , res){
