@@ -67,6 +67,7 @@ function call (i) {
                     case 2:div3.innerHTML += createTemplate (txt); break;
                     case 3:div4.innerHTML += createTemplate (txt); break;
                 }
+                alert(cntr);
                 cntr++;
             }
         }
