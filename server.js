@@ -119,7 +119,7 @@ app.get('/one/comments' ,function(req ,res ){
 
 
 
-app.get('/articles/:articleName', function(req, res) {
+app.get('/:articleName', function(req, res) {
   
   pool.query("SELECT * FROM article WHERE title = $1", [req.params.articleName], function(err , result) {
      if(err) {
@@ -143,18 +143,6 @@ app.get('/articles/:articleName', function(req, res) {
 
 
 
-
-
-
-
-
-app.get('/index', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
-});
-
-app.get('/tset', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'tset.html'));
-});
 
 app.get('/ui/pre_main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'pre_main.js'));
@@ -227,8 +215,6 @@ app.get('/ui/p3.css', function (req, res) {
 app.get('/ui/p5.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'p5.css'));
 });
-
-
 
 
 
