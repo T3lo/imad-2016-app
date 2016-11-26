@@ -49,7 +49,7 @@ htmlTemplate +=`
 
 
 function call (i) {
-    var div = document.getElementById('test');
+    var div = document.getElementById('one');
 
     var request = new XMLHttpRequest();
     request.onreadystatechange = function () {
