@@ -47,9 +47,13 @@ htmlTemplate +=`
     return htmlTemplate;
 }
 
+var cntr=0;
 
 function call (i) {
-    var div = document.getElementById('one');
+    var div1 = document.getElementById('one');
+    var div2 = document.getElementById('two');
+    var div3 = document.getElementById('three');
+    var div4 = document.getElementById('four');
 
     var request = new XMLHttpRequest();
     request.onreadystatechange = function () {
@@ -57,7 +61,13 @@ function call (i) {
             if( request.status === 200 ) {
                 var txt = request.responseText;
                 txt = JSON.parse(txt);
-                div.innerHTML += createTemplate (txt);
+                switch(cntr%4) {
+                    case 0:div1.innerHTML += createTemplate (txt); break;
+                    case 1:div2.innerHTML += createTemplate (txt); break;
+                    case 2:div3.innerHTML += createTemplate (txt); break;
+                    case 3:div4.innerHTML += createTemplate (txt); break;
+                }
+                cntr++;
             }
         }
     };
@@ -69,7 +79,7 @@ function call (i) {
 var body = document.getElementById('set');
 body.onload = function() {
 
-        for(var i=1;i<=1;i++) {
+        for(var i=1;i<=4;i++) {
             call(i);
         }
 };
