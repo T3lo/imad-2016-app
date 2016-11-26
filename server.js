@@ -120,7 +120,6 @@ app.get('/one/comments' ,function(req ,res ){
 
 
 app.get('/:articleName', function(req, res) {
-  alert("hi");
   pool.query("SELECT * FROM article WHERE title = $1", [req.params.articleName], function(err , result) {
      if(err) {
          res.status(500).send(err.toString());
