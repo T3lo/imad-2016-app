@@ -62,6 +62,9 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'dummy.html'));
 });
 
+app.get('/MyBLog.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'MyBLog.html'));
+});
 
 var pool = new Pool(config);
 app.get('/test-db', function(req , res){
@@ -147,13 +150,6 @@ app.get('/ui/pre_main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'pre_main.js'));
 });
 
-
-
-
-
-app.get('/MyBLog.html', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'MyBLog.html'));
-});
 
 app.get('/ui/bfoot.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'bfoot.css'));
