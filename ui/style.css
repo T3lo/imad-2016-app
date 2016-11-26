@@ -1,52 +1,105 @@
-#main #one .up {
-  height: 300px;
-  width: 100%;
-  background-image: url('http://eskipaper.com/images/gray-wallpaper-10.jpg');
+#places {
+  height: 350px;
+  width: 25%;
+}
+#t1 {
+  height: 8%;
+  width: 96%;
+  margin: 0px;
+  padding: 2% 2% 0 2%;
   color: white;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  direction: flex;
 }
-.up #uptop {
-  height: 50%;
-}
-#uptop .stop {
-  height: 1px;
-}
-#uptop #one_blog {
+#t1 p {
   margin-top: 10px;
-  margin-left: 90%;
-  border: 2px solid;
-  height: 35px;
-  width: 80px;
 }
-#one_blog #one_blog_txt {
-  text-align: center;
-  height: 14px;
-  margin-top: 7px;  
+#t2 {
+  height: 80%;
+  width: 100%;
+  margin: 0px;
+  background-color: #fafdff;
 }
-#one_blog #one_blog_txt a {
-  text-decoration: none;
-  color: white;
+#t2 p {
+  font-size: 15px;
+  padding: 10px;
 }
-.up #name {
-  margin-left: 12%;
-  width: 76%;
-  height: 40%;
-  margin-top: 90px;
-  text-align: center;
+#t2 img {
+  width: 100%;
+  height: 50%;
+  margin: 0px;
 }
-#name p{
-  font-size: 50px;  
-  font-weight: 100;  
+#t3 {
+  height: 30px;
+  width: 96%;
+  padding: 2% 2% 0 2%;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  display: flex;
 }
-#main #one .down {
-  margin-left: 12%;
-  width: 76%;
-  height: 20%;
-  color: #151630;
+#places #t1 {
+  background-color: #8a32dd;
+  color: white; 
 }
-.down p {
-  text-align: center;
-  font-size: 40px;
+#places #t3 {
+  background-color: #dddb32;
+  color: black;  
+}
+#code #t1 {
+  background-color: #f5f33f;
+  color: #18191a;
+}
+#code #t3 {
+  background-color: #56b18e;
+  color: #fff;  
+}
+#music #t1 {
+  background-color: #1a6852;
+  color: #f9f9f4;  
+}
+#music #t3 {
+  background-color: #b6f5d1;
+  color: black;  
+}
+#books #t1 {
+  background-color: #7e4023;
+  color: #fff;  
+}
+#books #t3 {
+  background-color: #4832dd;
+  color: #fff;    
+}
+
+#comment {
+  margin-left: 15px;
   margin-top: 5px;
-  color: gray;
-  font-weight: 100;  
+  display: flex;
+}
+.no {
+  margin-top: 2px;
+  font-size: 14px;
+}
+#comment p {
+  margin-left: 5px;
+  margin-top: 0px;
+}
+#like {
+  margin-left: auto;
+  margin-right: 0px;
+  width: 90px;
+  display: flex;
+}
+#like .no {
+  margin-top: 5px;
+  width: 30px;
+}
+#like .like_pic {
+  margin-top: 0px;
+  height: 25px;
+  width: 25px;
+}
+.like_pic img {
+  height: 25px;
+  width: 25px;
 }
