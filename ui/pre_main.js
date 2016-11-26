@@ -1,4 +1,6 @@
 function createTemplate (txt) {
+var dt = txt["date"];
+dt = dt.toDateString();
 
 var htmlTemplate=`
 <div id='`;
@@ -6,7 +8,7 @@ htmlTemplate += txt["type"];
 htmlTemplate +=`'>
 
          <div id='t1'><p>`;
-htmlTemplate += txt["date"];
+htmlTemplate += dt;
 htmlTemplate +=`
         </p></div>
          <div id='t2'>
