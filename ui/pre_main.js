@@ -42,6 +42,7 @@ function call (i) {
 
 var body = document.getElementById('set');
 body.onload = function() {
+        var div = document.getElementById('test');
         div.innerHTML = createTemplate ();
 };
 
