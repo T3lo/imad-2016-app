@@ -67,7 +67,6 @@ function call (i) {
                     case 2:div3.innerHTML += createTemplate (txt); break;
                     case 3:div4.innerHTML += createTemplate (txt); break;
                 }
-                alert(cntr.toString());
                 cntr++;
             }
         }
@@ -79,10 +78,11 @@ function call (i) {
 
 var body = document.getElementById('set');
 body.onload = function() {
-
+    for(var j=0;j<5;j++) {
         for(var i=1;i<=5;i++) {
             call(i);
         }
+    }
 };
 
 
