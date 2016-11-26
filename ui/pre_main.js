@@ -57,7 +57,7 @@ function call (i) {
             if( request.status === 200 ) {
                 var txt = request.responseText;
                 txt = JSON.parse(txt);
-                div.innerHTML += txt;
+                div.innerHTML += createTemplate (txt);
             }
         }
     };
