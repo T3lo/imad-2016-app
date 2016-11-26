@@ -1,96 +1,52 @@
-* {
-	margin: 0px;
-	background-color: #fff;
+#main #one .up {
+  height: 300px;
+  width: 100%;
+  background-image: url('http://eskipaper.com/images/gray-wallpaper-10.jpg');
+  color: white;
 }
-.header{
-    background-color: #ffd10a;
-    width: 100%;
-    height: 200px;
+.up #uptop {
+  height: 50%;
 }
-img {
-    position: absolute;
-    top: 50px;
-    margin-left: 43%;
-    width: 14%;
-    z-index: 1;
+#uptop .stop {
+  height: 1px;
 }
-.container {
-    margin: auto;
-    height: 500px;
-    width: 60%;
-    margin-top: 80px;
+#uptop #one_blog {
+  margin-top: 10px;
+  margin-left: 90%;
+  border: 2px solid;
+  height: 35px;
+  width: 80px;
 }
-div div {
-    margin: 0px;
-    height: inherit;
-    width: 49.7%;
-    float: left;
+#one_blog #one_blog_txt {
+  text-align: center;
+  height: 14px;
+  margin-top: 7px;  
 }
-div:nth-child(1){
-    border-right: 1px solid white;
+#one_blog #one_blog_txt a {
+  text-decoration: none;
+  color: white;
 }
-.footer {
-    width: 100%;
-    background-color: #8d8d8d;
-    height: 200px;
-    margin-top: 50px;
+.up #name {
+  margin-left: 12%;
+  width: 76%;
+  height: 40%;
+  margin-top: 90px;
+  text-align: center;
 }
-div div div{
-    width: 100%;
-    background-color: inherit;
-    font-size: 20px;
-    font-family: times;
+#name p{
+  font-size: 50px;  
+  font-weight: 100;  
 }
-.first div:nth-child(1){
-    height: 40%;
-    border-bottom: 1px solid white;
-    background-color: #928F8F;
+#main #one .down {
+  margin-left: 12%;
+  width: 76%;
+  height: 20%;
+  color: #151630;
 }
-.second div:nth-child(1){
-    height: 60%;
-    border-bottom: 1px solid white;
-    background-color: #61CFC3; 
-}
-.first div:nth-child(2){
-    height: 60%;
-    border-bottom: 1px solid white;
-    background-color: #CB65C2;
-}
-.second div:nth-child(2){
-    height: 40%;
-    border-bottom: 1px solid white;
-    background-color: #BBBD6A;
-}
-h1{
-    margin-left: 10px;
-    margin-top: 10px;
-    font-size: 20px;
-    font-family: Times;
-    font-weight: bold;
-    color: white;
-    background-color: inherit;
-}
-p{
-    margin-left: 10px;
-    margin-top: 10px;
-    margin-right: 10px;
-    color: white;
-    background-color: inherit;
-}
-#test {
-    width: 100%;
-    height: 500px;
-    background-color: blue;
-}
-#one {
-    width: 25%;
-    height: 350px;
-    margin: 5px;
-    background-color: red;
-    display: block;
-}
-#one div {
-    height: 50%;
-    width: 100%;
-    background-color: #f8c900;
+.down p {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 5px;
+  color: gray;
+  font-weight: 100;  
 }
