@@ -1,63 +1,124 @@
 #main {
+  padding-top: 130px;
   width: 100%;
   height: 2000px;
-  background-color: #93cef3;
+  background-color: #2c678c;
   display: flex;
 }
 .section {
   height: 99%;
   width: 25%;
-  background-color: white;
+  background-color: inherit;
   margin-right: 12px;
 }
 #one {
   margin-left: 12px;  
   width: 25%;
 }
-#one>div {
+.section >div {
   margin: auto;
-  height: 350px;
   width: 92%;
   background-color: inherit;
+  margin-bottom: 20px;
 }
 
-#one #t1 {
+#t1 {
   height: 8%;
   width: 96%;
   margin: 0px;
   padding: 2% 2% 0 2%;
-  background-color: #8a32dd;
   color: white;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   direction: flex;
 }
-
-p {
+#t1 p {
   margin-top: 10px;
 }
-#one #t2 {
+#t2 {
   height: 80%;
-  width: 96%;
+  width: 100%;
   margin: 0px;
-  padding: 2%;
   background-color: #fafdff;
 }
-#one #t2 p {
+#t2 p {
   font-size: 15px;
-  
-}
-#one #t3 {
-  height: 8%;
-  width: 96%;
-  margin: 0px;
-  padding: 2% 2% 0 2%;
-  background-color: #dddb32;
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
+  padding: 10px;
 }
 #t2 img {
   width: 100%;
   height: 50%;
   margin: 0px;
+}
+#t3 {
+  height: 30px;
+  width: 96%;
+  padding: 2% 2% 0 2%;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  display: flex;
+}
+#places #t1 {
+  background-color: #8a32dd;
+  color: white; 
+}
+#places #t3 {
+  background-color: #dddb32;
+  color: black;  
+}
+#code #t1 {
+  background-color: #f5f33f;
+  color: #18191a;
+}
+#code #t3 {
+  background-color: #56b18e;
+  color: #fff;  
+}
+#music #t1 {
+  background-color: #1a6852;
+  color: #f9f9f4;  
+}
+#music #t3 {
+  background-color: #b6f5d1;
+  color: black;  
+}
+#books #t1 {
+  background-color: #7e4023;
+  color: #fff;  
+}
+#books #t3 {
+  background-color: #4832dd;
+  color: #fff;    
+}
+
+#comment {
+  margin-left: 15px;
+  margin-top: 5px;
+  display: flex;
+}
+.no {
+  margin-top: 2px;
+  font-size: 14px;
+}
+#comment p {
+  margin-left: 5px;
+}
+#like {
+  margin-left: auto;
+  margin-right: 0px;
+  width: 90px;
+  display: flex;
+}
+#like .no {
+  margin-top: 5px;
+  width: 30px;
+}
+#like .like_pic {
+  margin-top: 0px;
+  height: 25px;
+  width: 25px;
+}
+.like_pic img {
+  height: 25px;
+  width: 25px;
 }
