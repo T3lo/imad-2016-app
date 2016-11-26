@@ -200,21 +200,6 @@ app.get('/ui/p1.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'p1.css'));
 });
 
-app.get('/ui/p2.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'p2.css'));
-});
-
-app.get('/ui/p3.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'p3.css'));
-});
-
-app.get('/ui/p4.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'p4.css'));
-});
-
-app.get('/ui/p5.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'p5.css'));
-});
 
 
 
