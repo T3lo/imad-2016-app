@@ -10,10 +10,14 @@ htmlTemplate += txt["date"];
 htmlTemplate +=`
         </p></div>
          <div id='t2'>
+<a href='
+`;
+htmlTemplate += txt["id"];
+htmlTemplate +=`'>
 <img id='shot' src='`;
 htmlTemplate += txt["link"];
 htmlTemplate +=`
-'/>
+'/></a>
 <p>`;
 htmlTemplate += txt["content"];
 htmlTemplate +=`
