@@ -22,6 +22,10 @@
   height: 14px;
   margin-top: 7px;  
 }
+#one_blog #one_blog_txt a {
+  text-decoration: none;
+  color: white;
+}
 .up #name {
   margin-left: 12%;
   width: 76%;
