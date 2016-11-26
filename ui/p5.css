@@ -1,0 +1,29 @@
+#p5_head {
+  height: 100px;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 50px;
+  color: white;
+}
+#p5_head p {
+  text-align: center;
+  font-size: 50px;
+  font-family: sans;
+  font-weight: 100;
+}
+#p5_body {
+  display: flex;
+  height: 150px;
+  width: 60%;
+  margin-left: 20%;
+}
+#p5_body .link {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px;
+  width: 50px; 
+}
+.link img{
+  border-radius: 50%;
+}
