@@ -3,8 +3,8 @@ function createTemplate (txt) {
 var htmlTemplate=`
 <div id='`;
 htmlTemplate += txt["type"];
-htmlTemplate +=`
-'>
+htmlTemplate +=`'>
+
          <div id='t1'><p>`;
 htmlTemplate += txt["date"];
 htmlTemplate +=`
