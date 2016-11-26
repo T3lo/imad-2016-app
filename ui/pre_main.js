@@ -1,18 +1,43 @@
-function createTemplate (data) {
+function createTemplate (txt) {
 
 var htmlTemplate=`
-<div id='places'>
-         <div id='t1'><p>11 Nov, 2016</p></div>
+<div id='`;
+htmlTemplate += txt["type"];
+htmlTemplate +=`
+'>
+         <div id='t1'><p>`;
+htmlTemplate += txt["date"];
+htmlTemplate +=`
+        </p></div>
          <div id='t2'>
-<img id='shot' src='http://www.tripdesigners.co/wp-content/uploads/2015/09/635693880042525992-518822648_couple-hiking-valley.jpg'/>
-<p>this is the body of the article in the blog.Anyway this is a
-sample and wont see the light of corporate business.
+<img id='shot' src='`;
+htmlTemplate += txt["pic"];
+htmlTemplate +=`
+'/>
+<p>`;
+htmlTemplate += txt["content"];
+htmlTemplate +=`
 </p></div>
          <div id='t3'>
-             <div id='comment'><span class='no'>25</span><p>comments</p></div>
+             <div id='comment'>
+                <span class='no'>25
+`;
+htmlTemplate +=`
+                </span>
+                <p>
+                    comments
+                </p>
+            </div>
              <div id='like'>
-                <div class='no'><span>281</span></div>
-                <div class='like_pic'><img src='https://cdn2.iconfinder.com/data/icons/cute-tech-icon-set-1/512/Like-128.png'/></div>
+                <div class='no'>
+                    <span>
+                        281
+                    </span>
+                </div>
+                <div class='like_pic'>
+                    <img src='
+                        https://cdn2.iconfinder.com/data/icons/cute-tech-icon-set-1/512/Like-128.png
+                    '/></div>
              </div>
           </div>
      </div>
@@ -25,7 +50,6 @@ sample and wont see the light of corporate business.
 
 function call (i) {
     var div = document.getElementById('test');
-    div.innerHTML = '<p>qwerty</p>';
 
     var request = new XMLHttpRequest();
     request.onreadystatechange = function () {
@@ -33,17 +57,21 @@ function call (i) {
             if( request.status === 200 ) {
                 var txt = request.responseText;
                 txt = JSON.parse(txt);
+                div.innerHTML += createTemplate (txt);
             }
         }
     };
-        request.open('GET', 'http://t3lo.imad.hasura-app.io/div/'+i, true);
-        request.send(null);
+    
+    request.open('GET', 'http://t3lo.imad.hasura-app.io/div/'+i, true);
+    request.send(null);
 }
 
 var body = document.getElementById('set');
 body.onload = function() {
-        var div = document.getElementById('test');
-        div.innerHTML = createTemplate ();
+
+        for(var i=1;i<=1;i++) {
+            call(i);
+        }
 };
 
 
