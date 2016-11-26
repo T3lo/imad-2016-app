@@ -11,7 +11,7 @@ htmlTemplate +=`
         </p></div>
          <div id='t2'>
 <img id='shot' src='`;
-htmlTemplate += txt["pic"];
+htmlTemplate += txt["link"];
 htmlTemplate +=`
 '/>
 <p>`;
