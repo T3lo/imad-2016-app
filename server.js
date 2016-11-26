@@ -152,7 +152,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/ui/MyBLog', function (req, res) {
+app.get('/MyBLog.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'MyBLog.html'));
 });
 
