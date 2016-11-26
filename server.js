@@ -152,6 +152,10 @@ app.get('/index', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+app.get('/tset', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'tset.html'));
+});
+
 app.get('/ui/pre_main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'pre_main.js'));
 });
