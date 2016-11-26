@@ -62,29 +62,6 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'dummy.html'));
 });
 
-app.get('/ui/x1.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'x1.css'));
-});
-
-app.get('/ui/p1.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'p1.css'));
-});
-
-app.get('/ui/p2.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'p2.css'));
-});
-
-app.get('/ui/p3.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'p3.css'));
-});
-
-app.get('/ui/p4.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'p4.css'));
-});
-
-app.get('/ui/p5.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'p5.css'));
-});
 
 var pool = new Pool(config);
 app.get('/test-db', function(req , res){
@@ -211,9 +188,20 @@ app.get('/ui/art.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'art.js'));
 });
 
-app.get('/ui/madi.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
+
+
+
+
+app.get('/ui/x1.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'x1.css'));
 });
+
+
+
+
+
+
+
 
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
