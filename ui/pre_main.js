@@ -10,7 +10,7 @@ htmlTemplate += txt["date"];
 htmlTemplate +=`
         </p></div>
          <div id='t2'>
-<a href='
+<a href='/Blog/
 `;
 htmlTemplate += txt["id"];
 htmlTemplate +=`'>
