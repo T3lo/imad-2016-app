@@ -6,7 +6,7 @@ htmlTemplate += txt["type"];
 htmlTemplate +=`'>
 
          <div id='t1'><p>`;
-htmlTemplate += txt["date"].toDateString();
+htmlTemplate += txt["date"];
 htmlTemplate +=`
         </p></div>
          <div id='t2'>
