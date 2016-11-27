@@ -89,7 +89,7 @@ function call (i) {
 
 var body = document.getElementById('set');
 body.onload = function() {
-    for(var j=0;j<5;j++) {
+    for(var j=0;j<10;j++) {
         for(var i=1;i<=5;i++) {
             call(i);
         }
