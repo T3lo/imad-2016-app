@@ -99,7 +99,7 @@ var htmlTemplate=`
 	    
 	    <div id='main'>
 	        <div id='div_pic'>
-	            <img id='pic' src="${src}"/>
+	            <img id='pic' src="#"/>
 	        </div>
 		<div id='heading'><h1>${heading}</h1></div>
 	        <div id='article'>
