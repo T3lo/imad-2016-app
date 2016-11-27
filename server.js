@@ -119,6 +119,23 @@ var htmlTemplate=`
     return htmlTemplate;
 }
 
+
+app.get('/div/:articleName', function(req , res){
+
+   pool.query('SELECT * FROM divs WHERE id = $1' ,[req.params.articleName] , function(err , result){
+      if(err) {
+          res.status(500).send(err.toString());
+      }
+      else{
+         if(result.rows.length === 0) {
+             res.status(404).send('Article not found');
+         } else {
+             res.send(JSON.stringify(result.rows[0]));
+         }
+      }
+   });
+});
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'dummy.html'));
 });
