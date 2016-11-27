@@ -66,6 +66,9 @@ app.get('/MyBLog.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'MyBLog.html'));
 });
 
+app.get('/tset.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'tset.html'));
+});
 
 
 var pool = new Pool(config);
