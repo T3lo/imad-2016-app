@@ -56,7 +56,68 @@ var htmlTemplate=`
     return htmlTemplate;
 }
 
+function createTemplate2 (data) {
+    var title=data.title;
+    var date=data.date;
+    var heading=data.heading;
+    var content=data.content;
 
+var htmlTemplate=`
+<!DOCTYPE html>
+<html class="">
+<head>
+    <title>${title}</title>
+    <link href="bhead.css" rel="stylesheet" />
+    <link href="bfoot.css" rel="stylesheet" />
+    <link href="full.css" rel="stylesheet" />
+    <link href="article_page.css" rel="stylesheet" />
+</head>
+<body id='set'>
+    <div id='container'>
+	<div class='stop'></div>
+        <div id='head'>
+            <h1>MyBLog</h1>
+            <div id='src'>
+                <div id='btn1'></div>
+                <input type='text' placeholder='Search me'/>
+            </div>
+            <div id='right'>
+                <div id='up'>
+                    <div id='login'><span id='first'>Log in</span></div>
+                    <div id='signup'><span id='second'>Sign up</span></div>
+                </div>
+                <div id='down'>
+                    <ul>
+                      <li>Code</li>
+                      <li>Music</li>
+                      <li>Places</li> 
+                      <li>Books</li>
+                    </ul>
+                </div>
+            </div>
+	    </div>
+	    
+	    <div id='main'>
+	        <div id='div_pic'>
+	            <img id='pic' src="${src}"/>
+	        </div>
+		<div id='heading'><h1>${heading}</h1></div>
+	        <div id='article'>
+                ${content}
+	        </div>
+
+	    </div>
+	    <div id='foot'></div>
+    </div>
+
+    <script type="text/javascript" src="/ui/pre_main.js">
+    </script>    
+</body>
+</html>
+`;
+
+    return htmlTemplate;
+}
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'dummy.html'));
@@ -138,7 +199,7 @@ app.get('/Blog/:articleName', function(req, res) {
          } else {
 //             res.send(JSON.stringify(result.rows));
              var articleData = result.rows[0];
-             res.send(createTemplate(articleData));
+             res.send(createTemplate2(articleData));
          }
      }
   });
