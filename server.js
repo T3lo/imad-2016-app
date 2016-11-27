@@ -194,6 +194,10 @@ app.get('/ui/bmain.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'bmain.css'));
 });
 
+app.get('/ui/article_page.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'article_page.css'));
+});
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
