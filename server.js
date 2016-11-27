@@ -136,6 +136,25 @@ app.get('/div/:articleName', function(req , res){
    });
 });
 
+app.get('/Blog/:articleName', function(req, res) {
+  pool.query("SELECT * FROM article WHERE id = $1", [req.params.articleName], function(err , result) {
+     if(err) {
+         res.status(500).send(err.toString());
+     } 
+     else {
+         if(result.rows.length === 0) {
+             res.status(404).send('Article not found');
+         } else {
+//             res.send(JSON.stringify(result.rows));
+             var articleData = result.rows[0];
+             res.send(createTemplate2(articleData));
+         }
+     }
+  });
+
+});
+
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'dummy.html'));
 });
@@ -163,21 +182,6 @@ app.get('/test-db', function(req , res){
    });
 });
 
-app.get('/div/:articleName', function(req , res){
-
-   pool.query('SELECT * FROM divs WHERE id = $1' ,[req.params.articleName] , function(err , result){
-      if(err) {
-          res.status(500).send(err.toString());
-      }
-      else{
-         if(result.rows.length === 0) {
-             res.status(404).send('Article not found');
-         } else {
-             res.send(JSON.stringify(result.rows[0]));
-         }
-      }
-   });
-});
 
 var counter = 0;
 app.get('/counter', function( req, res) {
@@ -201,26 +205,6 @@ app.get('/one/comments' ,function(req ,res ){
         var com = req.query.name;
         coms.push(com);
         res.send(JSON.stringify(coms));
-});
-
-
-
-app.get('/Blog/:articleName', function(req, res) {
-  pool.query("SELECT * FROM article WHERE id = $1", [req.params.articleName], function(err , result) {
-     if(err) {
-         res.status(500).send(err.toString());
-     } 
-     else {
-         if(result.rows.length === 0) {
-             res.status(404).send('Article not found');
-         } else {
-//             res.send(JSON.stringify(result.rows));
-             var articleData = result.rows[0];
-             res.send(createTemplate2(articleData));
-         }
-     }
-  });
-
 });
 
 
