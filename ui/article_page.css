@@ -24,13 +24,15 @@
 }
 #heading h1 {
   font-size: 50px;
-  text-align: center;
 }
 #article {
   margin-top: 50px;
   margin-left: 10px;
   margin-right: 10px;
   color: white;
+}
+#article p {
+    margin-bottom: 10px;
 }
 #comment-part {
   margin-top: 50px;
