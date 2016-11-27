@@ -1,3 +1,5 @@
+var height = 2000;
+
 function createTemplate (txt) {
 
 var htmlTemplate=`
@@ -58,6 +60,7 @@ function call (i) {
     var div2 = document.getElementById('two');
     var div3 = document.getElementById('three');
     var div4 = document.getElementById('four');
+    var main_div = document.getElementById('main');
 
     var request = new XMLHttpRequest();
     request.onreadystatechange = function () {
@@ -72,6 +75,10 @@ function call (i) {
                     case 3:div4.innerHTML += createTemplate (txt); break;
                 }
                 cntr++;
+                if(cntr%20 === 19) {
+                    height += 1000;
+                    main_div.style.height = height.toString();
+                }
             }
         }
     };
