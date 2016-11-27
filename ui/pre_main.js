@@ -76,7 +76,7 @@ function call (i) {
                 }
                 cntr++;
                 if(cntr%20 === 0) {
-                    height += 2500;
+                    height += 1500;
                     main_div.style.height = height.toString() + "px";
                 }
             }
