@@ -21,7 +21,8 @@ function createTemplate2 (data) {
     var date=data.date;
     var heading=data.heading;
     var content=data.content;
-
+    var img=data.img;
+    
 var htmlTemplate=`
 <!DOCTYPE html>
 <html class="">
@@ -59,7 +60,7 @@ var htmlTemplate=`
 	    
 	    <div id='main'>
 	        <div id='div_pic'>
-	            <img id='pic' src="#"/>
+	            <img id='pic' src="${img}"/>
 	        </div>
 		<div id='heading'><h1>${heading}</h1></div>
 	        <div id='article'>
