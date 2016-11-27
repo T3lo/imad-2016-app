@@ -1,1 +1,97 @@
+#container {
+  background-color: #2c678c;
+  height: 100%;
+}
+.stop {
+  height: .01px;
+  background-color: #2c678c;
+}
+#main {
+  margin-top: 120px;
+  margin-left: 15%;
+  margin-right: 15%;
+  height: 2000px;  
+  background-color: #2c678c;
+}
+#pic {
+  width: 100%;
+  height: inherit;
+}
+#heading {
+  color: white;
+  margin-left: auto;
+  margin-top: 50px;
+}
+#heading h1 {
+  font-size: 50px;
+  text-align: center;
+}
+#article {
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+}
+#comment-part {
+  margin-top: 50px;
+  height: 500px;
+}
+#comment-part #add-comment {
+  height: 70px;
+  display: flex;
+  margin-bottom: 5px;
+}
+#comment-part #add-comment #name {
+  width: 80%;
+  height: 35px;
+  margin-top: 10px;
+  border: 1px solid #2c678c;
+  border-bottom: 1px solid black;
+  background-color: inherit;
+  overflow-y: auto;
+}
+#comment-part #add-comment #add_btn {
+  width: 100px;
+  height: 50px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: 10px;
+  background-color: #521d6e;
+  border-radius: 3px;
+}
+#comment-part #add-comment #add_btn p {
+  text-align: center;
+  margin-top: 15px;
+  color: whitesmoke;
+}
+#comment-part #pre_comments {
+  height: 400px;
+}
+#comment-part #pre_comments .a_comment {
+  height: 25%;
+  margin-bottom: 5px;
+  background-color: #d3dedd;    
+  border-radius: 10px;  
+  display: flex;
+}
+.a_comment .usr_name {
+  margin: 10px;
+  width: 50px;
+  border-radius: 50%;
+  height: 50px;
+  background-color: yellow;
+  color: black;
+}
+.usr_name p {
+  text-align: center;
+  font-size: 38px;
+  margin-top: 6px;
+}
+.a_comment .the_response {
+  width: 100%;
+}
+.the_response p {
+  margin-left: 20px;
+  margin-top: 10px;
+}
 
