@@ -16,46 +16,6 @@ var config = {
 };
 
 
-function createTemplate (data) {
-    var title=data.title;
-    var date=data.date;
-    var heading=data.heading;
-    var content=data.content;
-
-var htmlTemplate=`
-<html>
-    <head>
-        <title>
-            ${title}
-        </title>
-    </head>
-    <body>
-        <div>
-            <a href='/'>HOME</a>
-        </div>
-        <hr/>
-        <h2>${heading}</h2>
-        <div>
-            ${date.toDateString()}
-        </div>
-        <div>
-            ${content}      
-        </div>
-        
-        <input type='text' id='name' placeholder='name'></input>
-        <input type='submit' value='Submit' id='submit_btn'></input>
-        <ul id='namelist'></ul>
-        
-        <script type="text/javascript" src="/ui/art.js">
-        </script>
-        
-    </body>
-</html>    
-`;
-
-    return htmlTemplate;
-}
-
 function createTemplate2 (data) {
     var title=data.title;
     var date=data.date;
