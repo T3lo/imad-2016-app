@@ -27,10 +27,10 @@ var htmlTemplate=`
 <html class="">
 <head>
     <title>${title}</title>
-    <link href="bhead.css" rel="stylesheet" />
-    <link href="bfoot.css" rel="stylesheet" />
-    <link href="full.css" rel="stylesheet" />
-    <link href="article_page.css" rel="stylesheet" />
+    <link href="/ui/bhead.css" rel="stylesheet" />
+    <link href="/ui/bfoot.css" rel="stylesheet" />
+    <link href="/ui/full.css" rel="stylesheet" />
+    <link href="/ui/article_page.css" rel="stylesheet" />
 </head>
 <body id='set'>
     <div id='container'>
