@@ -1,6 +1,3 @@
-var express = require('express');
-var morgan = require('morgan');
-var path = require('path');
 
 
 var height = 2000;
@@ -13,7 +10,7 @@ var htmlTemplate=`
 htmlTemplate += txt["type"];
 htmlTemplate +=`'>
 
-         <div id='t1'><p>${date.toDateString()}`;
+         <div id='t1'><p>${txt.date}`;
 htmlTemplate +=`
         </p></div>
          <div id='t2'>
