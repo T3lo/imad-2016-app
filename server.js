@@ -70,6 +70,9 @@ var htmlTemplate=`
 	    </div>
 	    <div id='foot'></div>
     </div>
+        
+        <script type="text/javascript" src="/ui/art.js">
+        </script>
 
 </body>
 </html>
