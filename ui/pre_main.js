@@ -4,12 +4,13 @@ var height = 2000;
 var main_div = document.getElementById('main');
 
 function createTemplate (txt) {
+var date = txt.date;    
 var htmlTemplate=`
 <div id='`;
 htmlTemplate += txt["type"];
 htmlTemplate +=`'>
 
-         <div id='t1'><p>${txt.date}`;
+         <div id='t1'><p>${date}`;
 htmlTemplate +=`
         </p></div>
          <div id='t2'>
