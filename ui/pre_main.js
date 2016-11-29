@@ -10,7 +10,7 @@ var htmlTemplate=`
 htmlTemplate += txt["type"];
 htmlTemplate +=`'>
 
-         <div id='t1'><p>${date}`;
+         <div id='t1'><p>${date.toDateString()}`;
 htmlTemplate +=`
         </p></div>
          <div id='t2'>
