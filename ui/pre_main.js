@@ -5,10 +5,9 @@ var main_div = document.getElementById('main');
 
 function createTemplate (txt) {
 var date = txt.date;    
-var type = txt.type;
-
 var htmlTemplate=`
-<div id='${type}`;
+<div id='`;
+htmlTemplate += txt["type"];
 htmlTemplate +=`'>
 
          <div id='t1'><p>${date}`;
