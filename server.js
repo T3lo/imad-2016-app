@@ -71,8 +71,6 @@ var htmlTemplate=`
 	    <div id='foot'></div>
     </div>
 
-    <script type="text/javascript" src="/ui/pre_main.js">
-    </script>    
 </body>
 </html>
 `;
