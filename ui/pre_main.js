@@ -28,7 +28,7 @@ htmlTemplate +=`
 </p></div>
          <div id='t3'>
              <div id='comment'>
-                <span class='no'>25
+                <span class='no'>0
 `;
 htmlTemplate +=`
                 </span>
@@ -39,7 +39,7 @@ htmlTemplate +=`
              <div id='like'>
                 <div class='no'>
                     <span>
-                        281
+                        0
                     </span>
                 </div>
                 <div class='like_pic'>
