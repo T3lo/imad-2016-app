@@ -5,12 +5,14 @@ var main_div = document.getElementById('main');
 
 function createTemplate (txt) {
 var date = txt.date;    
+date = date.toDateString();
 var htmlTemplate=`
 <div id='`;
 htmlTemplate += txt["type"];
 htmlTemplate +=`'>
 
-         <div id='t1'><p>${date}`;
+         <div id='t1'><p>`;
+htmlTemplate += date;
 htmlTemplate +=`
         </p></div>
          <div id='t2'>
