@@ -1,3 +1,8 @@
+var express = require('express');
+var morgan = require('morgan');
+var path = require('path');
+
+
 var height = 2000;
 var main_div = document.getElementById('main');
 
