@@ -4,7 +4,7 @@ var height = 2000;
 var main_div = document.getElementById('main');
 
 function createTemplate (txt) {
-var date = txt.date;    
+var date = txt["date"];    
 date = date.toDateString();
 var htmlTemplate=`
 <div id='`;
