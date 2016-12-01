@@ -10,10 +10,14 @@
 #uptop .stop {
   height: 1px;
 }
+a {
+    text-decoration: none;
+}
 #uptop #one_blog {
   margin-top: 10px;
   margin-left: 90%;
-  border: 2px solid;
+  border: 2px solid white;
+  color: white;
   height: 35px;
   width: 80px;
 }
