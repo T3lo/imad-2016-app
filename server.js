@@ -2,6 +2,7 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 var Pool = require('pg').Pool;
+var crypto = require('crypto');
 
 var app = express();
 app.use(morgan('combined'));
@@ -80,6 +81,18 @@ var htmlTemplate=`
 
     return htmlTemplate;
 }
+
+function hash(input ,salt){
+    // How do we create a hash?
+    var hashed = crypto.pbkdf2Sync(input ,salt ,10000 ,512 , 'sha512');
+    return hashed.toString();
+}
+
+app.get('/hash/:input', function(req, res) {
+        var hashString = hash(req.params.input , 'this-is-some-random-string');
+        res.send(hashString);
+});
+
 
 
 app.get('/div/:articleName', function(req , res){
