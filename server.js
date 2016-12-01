@@ -85,7 +85,7 @@ var htmlTemplate=`
 function hash(input ,salt){
     // How do we create a hash?
     var hashed = crypto.pbkdf2Sync(input ,salt ,10000 ,512 , 'sha512');
-    return hashed.toString();
+    return ["pkbdf2" ,"10000", salt, hashed.toString()].join($);
 }
 
 app.get('/hash/:input', function(req, res) {
