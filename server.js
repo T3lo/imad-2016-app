@@ -141,8 +141,8 @@ function createTemplate3 () {
         <body id='set'>
             <h3>This is the Log in page</h3>
             <div id='main'>
-                <div class='box'><input type='text' id='username' placeholder='username' class='field'/></div>
-                <div class='box'><input type='password' id='password' class='field'/></div>
+                <div class='box' class='field'><input type='text' id='username' placeholder='username'/></div>
+                <div class='box' class='field'><input type='password' id='password'/></div>
                 <div class='box'><input type='button' value='Login' id='submit_btn'/></div>
             </div>
         </body>
