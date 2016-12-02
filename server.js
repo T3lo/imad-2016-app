@@ -100,7 +100,6 @@ function createTemplate3 () {
                     text-align: center;
                     margin-left: 20%;
                     width: 60%;
-                    border: 2px solid;
                     font-size: 50px;
                     color: whitesmoke;
                     font-family: sans;
