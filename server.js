@@ -89,7 +89,7 @@ var htmlTemplate=`
     return htmlTemplate;
 }
 
-function createTemplate3 () {
+function loginTemp () {
     var htmlTemplate = `
     <!DOCTYPE html>
     <html>
@@ -152,6 +152,68 @@ function createTemplate3 () {
     return htmlTemplate;
 }
 
+function signupTemp () {
+    var htmlTemplate = `
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>Sign Up Page</title>
+            <style>
+                h3 {
+                    text-align: center;
+                    margin-left: 20%;
+                    width: 60%;
+                    font-size: 50px;
+                    color: whitesmoke;
+                    font-family: sans;
+                }
+                body {
+                    background-color:    #2c678c;
+                }   
+                #main {
+                    margin-top: 120px;
+                    width: 60%;
+                    margin-left: 20%;
+                    border: 1px solid #2c678c;
+                    background-color: #2c678c;
+                    height: 250px;
+                }
+                .box {
+                    width: 40%;                     
+                    margin-top: 16px;
+                    margin-left: 30%;
+                    margin-bottom: 10px;
+                }
+                .box input {
+                    width: 98%;
+                    height: 40px;
+                    border: 1px solid #2c678c;                
+                    border-radius: 3px;   
+                    padding-left: 5%;
+                    font-size: 20px;
+                }              
+                #submit_btn {
+                    background-color: #3c3853;
+                    color: #c8cbd8;
+                    width: 30%;
+                    margin-left: 37%;
+                    padding: 0px;
+                }                   
+            </style>
+        </head>
+        <body id='set'>
+            <h3>Sign Up page</h3>
+            <div id='main'>
+                <div class='box'><input type='text' id='username' placeholder='username'/></div>
+                <div class='box'><input type='password' id='password'/></div>
+                <div class='box'><input type='button' value='Sign Up' id='submit_btn'/></div>
+            </div>
+        </body>
+    </html>
+    `;
+    
+    return htmlTemplate;
+}
 
 function hash(input ,salt){
     // How do we create a hash?
@@ -276,11 +338,11 @@ app.get('/MyBLog.html', function (req, res) {
 });
 
 app.get('/lg', function (req, res) {
-  res.send(createTemplate3());
+  res.send(loginTemp());
 });
 
 app.get('/sg', function (req, res) {
-  res.send(createTemplate3());
+  res.send(signupTemp());
 });
 
 app.get('/tset.html', function (req, res) {
