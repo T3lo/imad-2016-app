@@ -138,6 +138,11 @@ app.post('/login', function(req, res) {
     });     
 });
 
+app.get('/tset', function (req ,res) {
+  res.sendFile(path.join(__dirname, 'ui', 'tset.html'));
+});
+
+
 app.get('/div/:articleName', function(req , res){
 
    pool.query('SELECT * FROM divs WHERE id = $1' ,[req.params.articleName] , function(err , result){
