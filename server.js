@@ -96,25 +96,42 @@ function createTemplate3 () {
         <head>
             <title>Login Page</title>
             <style>
-
-            #main {
-                margin-top: 200px;
-                width: 40%;
-                margin-left: 30%;
-                border: 1px solid white;
-                border-radius: 3px;
-            }
-            .box {
-                width: 100%;
-                height: 30%;
-            }
-            #submit_btn {
-                background-color: #0f0f0f;
-            }
-            
+                body {
+                    background-color:    #2c678c;
+                }   
+                #main {
+                    margin-top: 180px;
+                    width: 30%;
+                    margin-left: 35%;
+                    border: 1px solid #2c678c;
+                    background-color: #2c678c;
+                    height: 250px;
+                }
+                .box {
+                    width: 60%;                     
+                    margin-top: 16px;
+                    margin-left: 19.8%;
+                    margin-bottom: 10px;
+                }
+                .box input {
+                    width: 98%;
+                    height: 40px;
+                    border: 1px solid #2c678c;                
+                    border-radius: 3px;   
+                    padding-left: 5%;
+                    font-size: 20px;
+                }              
+                #submit_btn {
+                    background-color: #3c3853;
+                    color: white;
+                    width: 30%;
+                    margin-left: 37%;
+                    padding: 0px;
+                }                   
             </style>
         </head>
         <body id='set'>
+            <h3>This is the Log in page</h3>
             <div id='main'>
                 <div class='box'><input type='text' id='username' placeholder='username'/></div>
                 <div class='box'><input type='password' id='password'/></div>
