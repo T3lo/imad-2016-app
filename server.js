@@ -104,6 +104,10 @@ function createTemplate3 () {
                 border: 1px solid white;
                 border-radius: 3px;
             }
+            .box {
+                width: 100%;
+                height: 30%;
+            }
             #submit_btn {
                 background-color: #0f0f0f;
             }
@@ -112,9 +116,9 @@ function createTemplate3 () {
         </head>
         <body id='set'>
             <div id='main'>
-                <input type='text' id='username' placeholder='username'/>
-                <input type='password' id='password'/>
-                <input type='button' value='Login' id='submit_btn'/>
+                <div class='box'><input type='text' id='username' placeholder='username'/></div>
+                <div class='box'><input type='password' id='password'/></div>
+                <div class='box'><input type='button' value='Login' id='submit_btn'/></div>
             </div>
         </body>
     </html>
