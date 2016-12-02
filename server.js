@@ -89,6 +89,41 @@ var htmlTemplate=`
     return htmlTemplate;
 }
 
+function createTemplate3 () {
+    var htmlTemplate = `
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>Login Page</title>
+            <style>
+
+            #main {
+                margin-top: 200px;
+                width: 40%;
+                margin-left: 30%;
+                border: 1px solid white;
+                border-radius: 3px;
+            }
+            #submit_btn {
+                background-color: #0f0f0f;
+            }
+            
+            </style>
+        </head>
+        <body id='set'>
+            <div id='main'>
+                <input type='text' id='username' placeholder='username'/>
+                <input type='password' id='password'/>
+                <input type='button' value='Login' id='submit_btn'/>
+            </div>
+        </body>
+    </html>
+    `;
+    
+    return htmlTemplate;
+}
+
+
 function hash(input ,salt){
     // How do we create a hash?
     var hashed = crypto.pbkdf2Sync(input ,salt ,10000 ,512 , 'sha512');
@@ -209,6 +244,14 @@ app.get('/', function (req, res) {
 
 app.get('/MyBLog.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'MyBLog.html'));
+});
+
+app.get('/lg', function (req, res) {
+  res.send(createTemplate3());
+});
+
+app.get('/sg', function (req, res) {
+  res.send(createTemplate3());
 });
 
 app.get('/tset.html', function (req, res) {
