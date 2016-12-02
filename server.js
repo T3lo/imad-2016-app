@@ -157,6 +157,11 @@ app.get('/check_login', function(req, res) {
     }
 });
 
+app.get('/logout', function(req, res) {
+    delete req.session.auth;
+    res.send('You are Logged out successfully');
+})
+
 
 app.get('/tset', function (req ,res) {
   res.sendFile(path.join(__dirname, 'ui', 'tset.html'));
