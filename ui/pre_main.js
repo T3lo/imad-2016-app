@@ -148,3 +148,38 @@ button.onclick = function() {
   request.send(null);
   
 };
+
+
+var btn = document.getElementById('submit_btn');
+btn.onclick = function () {
+
+  var request = new XMLHttpRequest()  ;
+  
+  request.onreadystatechange = function() {
+    if(request.readyState === XMLHttpRequest.DONE) {
+        if(request.status === 200){
+            console.log('user id logged in');
+            alert('Logged in');
+        } else {
+            if (request.status===403){
+                alert('incorrect');
+            } else  {
+                if(request.status === 500){
+                    alert('something went wrong in the server');
+                }
+            }
+        }
+    }
+  };
+  
+  
+    var username = document.getElementById('username');
+    var password = document.getElementById('password');
+    console.log(username);
+    console.log(password);
+    request.open('POST', 'http://t3lo.imad.hasura-app.io/login' , true);
+    request.setRequestHeader('Content-Type' , 'application/json');
+    request.send(JSON.stringify({username: username, password: password}));
+    
+
+};
