@@ -140,7 +140,7 @@ function createTemplate3 () {
             </style>
         </head>
         <body id='set'>
-            <h3>This is the Log in page</h3>
+            <h3>Login page</h3>
             <div id='main'>
                 <div class='box'><input type='text' id='username' placeholder='username'/></div>
                 <div class='box'><input type='password' id='password'/></div>
