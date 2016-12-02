@@ -131,7 +131,7 @@ function createTemplate3 () {
                 }              
                 #submit_btn {
                     background-color: #3c3853;
-                    color: white;
+                    color: #c8cbd8;
                     width: 30%;
                     margin-left: 37%;
                     padding: 0px;
