@@ -103,6 +103,7 @@ function createTemplate3 () {
                     border: 2px solid;
                     font-size: 50px;
                     color: whitesmoke;
+                    font-family: sans;
                 }
                 body {
                     background-color:    #2c678c;
@@ -141,8 +142,8 @@ function createTemplate3 () {
         <body id='set'>
             <h3>This is the Log in page</h3>
             <div id='main'>
-                <div class='box field'><input type='text' id='username' placeholder='username'/></div>
-                <div class='box field'><input type='password' id='password'/></div>
+                <div class='box'><input type='text' id='username' placeholder='username'/></div>
+                <div class='box'><input type='password' id='password'/></div>
                 <div class='box'><input type='button' value='Login' id='submit_btn'/></div>
             </div>
         </body>
